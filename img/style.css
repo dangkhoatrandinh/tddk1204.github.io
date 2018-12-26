@@ -1,0 +1,218 @@
+.caption {
+       border: 1px solid #DDDDDD;
+       text-align: center;
+       background-color: #EEEEEE;
+       padding: 4px 4px 3px 4px;
+       margin-right:auto;
+       margin-left:auto;
+       -moz-border-radius: 3px;
+       -khtml-border-radius: 3px;
+       border-radius: 3px;
+}
+
+.caption img {
+       margin: 0px 0px 2px 0px;
+       padding: 0px;
+       border-top: 1px solid #ddd;
+       border-left: 1px solid #ddd;
+       border-bottom: 1px solid #c0c0c0;
+       border-right: 1px solid #c0c0c0;                 
+}
+
+.caption p.caption-text {
+       padding: 0px;
+       font-family: SVN-Museo Slab Regular;
+       font-size: 12px;
+       font-weight: normal;
+       line-height: 12px;
+}
+
+
+
+
+
+
+/*==font -- hướng dẫn nhúng font
+@font-face {
+font-family:font_strong;
+src:url(‘../fonts/Captureit.ttf’) format(‘truetype’),
+url(‘../fonts/Captureit.eot#iefix’) format(’embedded-opentype’),
+url(‘../fonts/Captureit.woff’) format(‘woff’);
+font-weight:normal;
+font-style:normal;
+}
+==*/
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Regular'), url('fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed'), url('fonts/MYRIADPRO-COND.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed Italic'), url('fonts/MYRIADPRO-CONDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Light';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Light'), url('fonts/MyriadPro-Light.woff') format('woff');
+}
+@font-face {
+font-family:SVN-Museo Slab Regular;
+src: local('SVN-Museo Slab Regular'), url('fonts/SVN-Museo Slab Regular.ttf') format('truetype');
+font-style: normal;
+font-weight: normal;
+}
+/*==Style cơ bản cho website==*/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+	
+	
+    font-family: SVN-Museo Slab Regular;
+    font-size: 18px;
+    line-height: 1.254em;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #3B8BBA;
+}
+a:hover,
+a:visited {
+    color: #265778;
+}
+
+
+/*==Lên khung cho website==*/
+#container {
+    padding-left: 150px;
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+#menu {
+    position: fixed;
+    height: 100%;
+    background-color: #191818;
+    width: 150px;
+    left: 0;
+}
+
+/*==Trang trí menu==*/
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#menu ul li {
+    line-height: 2.9em;
+    height: 2.9em;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+#menu li a {
+    display: block;
+    color: #fff;
+    padding: 0 1.9em;
+    border-bottom: 1px solid #333;
+}
+#menu li:hover {
+    background-color: #454545;
+}
+
+/*==Trang trí khung content==*/
+#content {
+  padding: 1em 8em;
+}
+#header,
+.call-to-action {
+    text-align: center;
+}
+
+/*==Trang trí header của content==*/
+#header{}
+#slogan {
+    color: #B45F04;
+    font-size: 0.8em;
+}
+
+/*==Call to Action==*/
+.call-to-action {
+    padding: 1.5em 20%;
+    background: #EFEFEF;
+    border: 1px solid#E8E8E8;
+	color: #B45F04;
+}
+
+/*==Chia cột phần content==*/
+.row {
+    overflow: auto;
+    margin: 1.5em auto;
+}
+.row .col {
+    float: left;
+    width: 31.3333%;
+    margin-right: 2.99%;
+}
+.row .colu {
+    float: left;
+    width: 46.8%;
+    margin-right: 2.99%;
+	
+}
+.row .colu:last-child {
+    float: right;
+    margin-right: 0;
+}
+.row .col:last-child {
+    float: right;
+    margin-right: 0;
+}
+/* Style cho ảnh */
+.row .col img {
+    float: left;
+    margin-right: 1em;
+}
+.row .colu img {
+    float: none;
+    margin-right: 2em;
+	
+}
+.khoa {
+	font-family: 'Myriad Pro Condensed Italic';
+	font-size: 20px;
+}
+.diep {
+	font-family:'Myriad Pro Light';
+	font-size: 20px;
+
+}
+/*==Footer==*/
+#footer {
+  font-size: 85%;
+  border-top: 1px solid #E6E6E6;
+  color: #838383;
+  padding: 1em 3em;
+  
+}
